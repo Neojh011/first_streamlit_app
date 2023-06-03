@@ -36,7 +36,7 @@ streamlit.dataframe(fruityvice_normalized)
 import snowflake.connector
 
 add_my_fruit = streamlit.text_input('What fruit would you to add?','jackfruit')
-streamlit.write('The user entered ', add_my_fruit)
+streamlit.write('Thanks for adding ', add_my_fruit)
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
